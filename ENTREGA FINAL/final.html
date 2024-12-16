@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Messi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Estils generals */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        header.principal {
+            background-color: #6a1b9a;
+        }
+        section.biografia {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        section.biografia img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section.biografia div {
+            flex: 1;
+        }
+        h2.subtitulo {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-align: center;
+            color: #444;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #0044cc;
+            color: white;
+        }
+        td.boxeo {
+            background-color: #ffcc00;
+            font-weight: bold;
+        }
+        td.clase {
+            background-color: #66cc66;
+            font-weight: bold;
+        }
+        td.patio {
+            background-color: #ff6666;
+            font-weight: bold;
+        }
+        td.empty {
+            background-color: #ffffff;
+        }
+        td.time {
+            background-color: #ececec;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-box {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-box:hover {
+            transform: scale(1.05);
+            border-color: #6a5acd;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Títol Principal -->
+    <header class="principal">
+        <h1>LEO MESSI</h1>
+    </header>
+
+    <!-- Biografia de Leo Messi -->
+    <section class="biografia">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Leo_Messi_20180626.jpg" alt="Leo Messi">
+        <div>
+            <h2>Biografia</h2>
+            <p>Lionel Messi, nascut el 24 de juny de 1987 a Rosario, Argentina, és considerat un dels millors futbolistes de tots els temps. Ha guanyat múltiples Balons d'Or i ha destacat per la seva increïble habilitat, visió de joc i capacitat golejadora. Després d'una il·lustre carrera al FC Barcelona, Messi va continuar brillant al Paris Saint-Germain i a la selecció argentina, amb la qual va aconseguir la Copa del Món el 2022.</p>
+        </div>
+    </section>
+
+    <!-- Subtítol i horari -->
+    <h2 class="subtitulo">Mi Horario Semanal</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="time">Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time">09:00 - 10:00</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="time">10:00 - 11:00</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                </tr>
+                <tr>
+                    <td class="time">11:00 - 12:00</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                    <td class="boxeo">Boxeo</td>
+                </tr>
+                <tr>
+                    <td class="time">12:00 - 13:00</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="time">13:00 - 14:00</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="time">14:00 - 15:00</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="time">15:00 - 16:00</td>
+                    <td class="clase">Clase</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="clase">Clase</td>
+                </tr>
+                <tr>
+                    <td class="time">16:00 - 17:00</td>
+                    <td class="clase">Clase</td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="clase">Clase</td>
+                </tr>
+                <tr>
+                    <td class="time">17:00 - 18:00</td>
+                    <td class="empty"></td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="time">18:00 - 18:20</td>
+                    <td class="patio">Patio</td>
+                    <td class="patio">Patio</td>
+                    <td class="patio">Patio</td>
+                    <td class="patio">Patio</td>
+                    <td class="patio">Patio</td>
+                </tr>
+                <tr>
+                    <td class="time">18:20 - 19:20</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                </tr>
+                <tr>
+                    <td class="time">19:20 - 20:20</td>
+                    <td class="empty"></td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                </tr>
+                <tr>
+                    <td class="time">20:20 - 21:20</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                    <td class="clase">Clase</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Subtítol i galeria -->
+    <h2 class="subtitulo">Galeria d'Imatges</h2>
+    <main class="gallery">
+        <div class="image-box"><img src="uf2html/IMAGEN/urus.webp" alt="Imatge 1"><p>Afició 1</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/images fcb.jpg" alt="Imatge 2"><p>Afició 2</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/boxeo.jpg" alt="Imatge 3"><p>Afició 3</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/mercedes.jpg" alt="Imatge 4"><p>Afició 4</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/correr.jpg" alt="Imatge 5"><p>Afició 5</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/laliga.png" alt="Imatge 6"><p>Afició 6</p></div>
+        <div class="image-box"><img src="uf2html/IMAGEN/5 m.webp" alt="Imatge 7"><p>Afició 7</p></div>
+    </main>
+
+    <!-- Peu de pàgina -->
+    <footer>
+        <p>&copy; 2024 Pàgina Combinada</p>
+    </footer>
+</body>
+</html>
